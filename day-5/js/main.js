@@ -1,5 +1,16 @@
-// Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 
-const boolToWord = bool => bool ? 'Yes' : 'No'
+// Use conditionals to return the proper message:
+// case 	                    return
+// name equals owner 	        'Hello boss'
+// otherwise 	                'Hello guest'
 
-console.log(boolToWord(true))
+// function greet(name, owner){
+//     if(name === owner){
+//         return 'Hello boss'
+//     }else{
+//         return 'Hello guest'
+//     }
+// }
+
+const greet = (name, owner) => name === owner ? 'Hello boss' : 'Hello guest'
