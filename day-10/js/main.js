@@ -11,7 +11,7 @@
 //     return `${firstInitial}.${secondInitial}`
 // }
 
-const abbrevName = name => `${name[0][0]}.${name.split(' ')[1][0]}`
+const abbrevName = name => `${name[0][0].toUpperCase()}.${name.split(' ')[1][0].toUpperCase()}`
 
 
 
