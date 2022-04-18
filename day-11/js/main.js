@@ -1,15 +1,12 @@
-// Trolls are attacking your comment section!
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-// A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+// For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
-// Your task is to write a function that takes a string and return a new string with all vowels removed.
 
-// For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+// function squareSum(nums){
+//     return nums.map(x => Math.pow(x, 2)).reduce((acc, c) => acc + c, 0)
+// }
 
-//Note: for this kata y isn't considered a vowel.
+// console.log(squareSum([1, 2, 2]))
 
-function disemvowel(str){
-    const vowels = ['a', 'e', 'i', 'o', 'u']
-    let noVowelArr = str.split('').filter(letter => !vowels.includes(letter.toLowerCase()))
-    return noVowelArr.join('')
-}
+const squareSum = nums => nums.map(n => n**2).reduce((acc, c) => acc + c, 0)
